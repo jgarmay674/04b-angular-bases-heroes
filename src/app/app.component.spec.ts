@@ -12,16 +12,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title '04b-angular-bases-heroes'`, () => {
+  it(`should have as title '02-angular-bases-heroes'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('04b-angular-bases-heroes');
+    expect(app.title).toEqual('02-angular-bases-heroes');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('04b-angular-bases-heroes app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('02-angular-bases-heroes app is running!');
   });
 });
